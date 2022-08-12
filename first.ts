@@ -30,3 +30,28 @@ console.log(multiply(20, 10));
 
 let multiply2: (x: number, y: number) => number;
 multiply2 = (x ,y) => 10 * 20;
+
+
+const number: number[] = [20, 10, 50, 33, 40]
+number.push(15);
+
+const friends: string[] = ['nayem', 'raju', 'salam', 'imtiaz']
+let megaName: string =  '';
+
+for (let i = 0; i < friends.length; i++) {
+    const friend: string = friends[i];
+    if(friend.length > megaName.length) {
+        megaName = friend;
+    }
+}
+console.log(megaName);
+
+//object
+
+let player: {
+    club: string;
+    salary: number;
+} = {
+    club: 'barcelona',
+    salary: 20000
+}

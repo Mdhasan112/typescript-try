@@ -21,3 +21,19 @@ const multiply = (x, y) => x * y;
 console.log(multiply(20, 10));
 let multiply2;
 multiply2 = (x, y) => 10 * 20;
+const number = [20, 10, 50, 33, 40];
+number.push(15);
+const friends = ['nayem', 'raju', 'salam', 'imtiaz'];
+let megaName = '';
+for (let i = 0; i < friends.length; i++) {
+    const friend = friends[i];
+    if (friend.length > megaName.length) {
+        megaName = friend;
+    }
+}
+console.log(megaName);
+//object
+let player = {
+    club: 'barcelona',
+    salary: 20000
+};
