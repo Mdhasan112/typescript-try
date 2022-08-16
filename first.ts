@@ -48,10 +48,39 @@ console.log(megaName);
 
 //object
 
-let player: {
+let player: { 
     club: string;
     salary: number;
 } = {
     club: 'barcelona',
     salary: 20000
 }
+
+interface Player {
+    Name: string,
+    age: number,
+    ClubName: string,
+    salary?: number,
+    isPlaying: boolean
+}
+
+const messi: Player= {
+    Name: 'Leo Messi',
+    age: 35,
+    ClubName: 'barcelona',
+    isPlaying: true
+}
+
+const ronaldo: Player= {
+    Name: 'Ronaldo',
+    age: 35,
+    ClubName: 'barcelona',
+    salary: 2000,
+    isPlaying: true
+}
+
+function getBonus(player: {salary: number}) {
+    return player.salary * 0.1;
+}
+
+getBonus({20})
