@@ -37,3 +37,21 @@ let player = {
     club: 'barcelona',
     salary: 20000
 };
+const messi = {
+    Name: 'Leo Messi',
+    age: 35,
+    ClubName: 'barcelona',
+    isPlaying: true
+};
+const ronaldo = {
+    Name: 'Ronaldo',
+    age: 35,
+    ClubName: 'barcelona',
+    salary: 2000,
+    isPlaying: true
+};
+function getBonus(player) {
+    return player.salary * 10;
+}
+const poorPlayer = { salary: 2000 };
+getBonus(ronaldo);

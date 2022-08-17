@@ -64,14 +64,14 @@ interface Player {
     isPlaying: boolean
 }
 
-const messi: Player= {
+const messi: Player = {
     Name: 'Leo Messi',
     age: 35,
     ClubName: 'barcelona',
     isPlaying: true
 }
 
-const ronaldo: Player= {
+const ronaldo: Player = {
     Name: 'Ronaldo',
     age: 35,
     ClubName: 'barcelona',
@@ -79,8 +79,16 @@ const ronaldo: Player= {
     isPlaying: true
 }
 
-function getBonus(player: {salary: number}) {
-    return player.salary * 0.1;
+function getBonus (player:{salary: number}) {
+    return player.salary * 10;
 }
 
-getBonus({20})
+const poorPlayer = {salary: 2000}
+// getBonus(ronaldo)
+
+class Person {
+    name: string
+    constructor(name: string) {
+        this.name = name;
+    }
+}
