@@ -55,3 +55,4 @@ function getBonus(player) {
 }
 const poorPlayer = { salary: 2000 };
 getBonus(ronaldo);
+

@@ -44,7 +44,7 @@ for (let i = 0; i < friends.length; i++) {
         megaName = friend;
     }
 }
-console.log(megaName);
+console.log('friend with largest name', megaName);
 
 //object
 
@@ -92,3 +92,5 @@ class Person {
         this.name = name;
     }
 }
+
+// const name = new Person("raju")
